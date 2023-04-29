@@ -1,0 +1,343 @@
+/* Global Styles
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .account ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .account li {
+    margin-left: 20px;
+  }
+  
+  .account a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .account a:hover {
+    color: #f8f8f8;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  section:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px #f8f8f8;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"], textarea {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus, textarea:focus {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    text-decoration: underline;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .selected {
+    background-color: #fff8dc;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  /* Animation Styles */
+  /* @keyframes fade-in {
+    from {
+      opacity: 0;
+    }} */
+   /* Global Styles */
+/* Global Styles */
+
+
+
+
+
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    text-shadow: 2px 2px #000;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover h1 {
+    transform: rotate(360deg);
+  }
+  
+  .account ul {
+    display: flex;
+    margin: 20px;
+    list-style: none;
+  }
+  
+  .account li {
+    margin: 30px;
+  }
+  
+  .account a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .account a:hover {
+    color: #f8f8f8;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  section:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px #f8f8f8;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  h2:hover {
+    transform: scale(1.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"], textarea {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus, textarea:focus {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    animation: pulse 1s infinite;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+    transform: scale(1.1);
+  } 
+ 
+
+
+  .checked-cvs {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  .checked-cvs:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .checked-cvs h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 1px 1px #f8f8f8;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .checked-cvs h3:hover {
+    transform: scale(1.1);
+  }
+  
+  .checked-cvs ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .checked-cvs li {
+    margin-bottom: 10px;
+  }
+  
+  .checked-cvs button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+
+ .ul-class{
+
+    margin:20px;
+ }
+ 
+
